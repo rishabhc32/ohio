@@ -1,5 +1,5 @@
 const express = require('express');
-const debug = require('debug')('route/addLink');
+const debug = require('debug')('routes/addLink');
 const request = require('request');
 
 const router = express.Router();
@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
         debug(Err);
         res.sendStatus(400);
     }
-})
+});
 
 module.exports = router;
 
@@ -36,7 +36,7 @@ function checkLink(link) {
             if(error)
                 return reject(error);
             if(response.statusCode !== 200)
-               return reject(`Not found status code: ${response.statusCode}`);
+               return reject(`Link not found status code: ${response.statusCode}`);
 
             resolve("Ok");
         });

@@ -3,6 +3,9 @@ const promisify = require('../helpers/promisifyFunction');
 const debug = require('debug')('model/redis');
 
 const redisClient = redis.createClient({
+    host: process.env.REDIS_HOST || '127.0.0.1',
+    port: process.env.REDIS_PORT || '6379',
+    password: process.env.REDIS_PASSWORD || null,
     enable_offline_queue: false,
     retry_strategy: (options) => {
         if(options.attempt < 10) 
