@@ -5,6 +5,8 @@ Modern browsers by defualt blocks `XHR` to unsecured(http) URLs from secured(htt
 
 It is written in `Node.js` using `express` server. It is using REDIS database hosted on _redis labs_. It is deployed on _wedeploy_ using `docker`.
 
+The idea came when I was working on a project using a certain API which was only in http. But I really liked that API and could not find any other method to forward it to https. So I made this tool to overcome this difficulty.
+
 The API is deployed on following link - https://ohio-spooderman.wedeploy.io
 
 __API Description is in below image.__
@@ -16,3 +18,6 @@ __API Description is in below image.__
 
 ![View Link](https://i.imgur.com/Fq5nhbh.png)
 ![Forward Saved Link](https://i.imgur.com/qlBXUOj.png)
+![Chrome forwarded Link](https://i.imgur.com/4RT6TPQ.png)
+![ADD Link](https://i.imgur.com/QojpcL2.png)
+![Bad Link](https://i.imgur.com/zAAQS9m.png)
