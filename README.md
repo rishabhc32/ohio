@@ -10,6 +10,7 @@ The API is deployed on following link - https://ohio-spooderman.wedeploy.io
 __API Description is in below image.__
 
 ![API Description](https://i.imgur.com/2IesDFs.jpg)
+> The data in POST request to Add Link is sent as `x-www-form-urlencoded`. Key value pair is 'link = {value}'.
 
 ### Screenshots
 
